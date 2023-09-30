@@ -5,7 +5,7 @@ namespace ElectronicJournalCourseProject.Data.Repositories
 {
     public class ElectronicJournalBaseRepository<T> : IBaseRepository<T> where T : class
     {
-        private ElectronicJournalContext _context;
+        protected ElectronicJournalContext _context;
         private string[] _options = { "TIMA\\SQLEXPRESS", "ElectronicJournalDb" };
 
         public ElectronicJournalBaseRepository()
