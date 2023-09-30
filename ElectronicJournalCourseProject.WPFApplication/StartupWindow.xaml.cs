@@ -11,7 +11,7 @@ namespace ElectronicJournalCourseProject.WPFApplication
         private ElectronicJournalContextDesignTimeFactory _factory;
         private string[] _options = { "TIMA\\SQLEXPRESS", "ElectronicJournalDb" };
 
-        public StartupWindow()
+        public StartupWindow() 
         {
             _factory = new ElectronicJournalContextDesignTimeFactory();
             var context = _factory.CreateDbContext(_options);

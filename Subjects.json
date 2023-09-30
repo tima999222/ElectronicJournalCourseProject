@@ -1,0 +1,62 @@
+[
+    {
+        "SubjectId": 1,
+        "SubjectName": "Математика"
+    },
+    {
+        "SubjectId": 2,
+        "SubjectName": "Физика"
+    },
+    {
+        "SubjectId": 3,
+        "SubjectName": "Химия"
+    },
+    {
+        "SubjectId": 4,
+        "SubjectName": "Биология"
+    },
+    {
+        "SubjectId": 5,
+        "SubjectName": "История"
+    },
+    {
+        "SubjectId": 6,
+        "SubjectName": "Литература"
+    },
+    {
+        "SubjectId": 7,
+        "SubjectName": "География"
+    },
+    {
+        "SubjectId": 8,
+        "SubjectName": "Информатика"
+    },
+    {
+        "SubjectId": 9,
+        "SubjectName": "Иностранный язык"
+    },
+    {
+        "SubjectId": 10,
+        "SubjectName": "Физкультура"
+    },
+    {
+        "SubjectId": 11,
+        "SubjectName": "Музыка"
+    },
+    {
+        "SubjectId": 12,
+        "SubjectName": "Изобразительное искусство"
+    },
+    {
+        "SubjectId": 13,
+        "SubjectName": "Обществознание"
+    },
+    {
+        "SubjectId": 14,
+        "SubjectName": "Экономика"
+    },
+    {
+        "SubjectId": 15,
+        "SubjectName": "Психология"
+    }
+]

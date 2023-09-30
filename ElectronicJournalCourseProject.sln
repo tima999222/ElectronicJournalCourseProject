@@ -3,9 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElectronicJournalCourseProject.Data", "ElectronicJournalCourseProject.Data\ElectronicJournalCourseProject.Data.csproj", "{7D19D506-0778-4312-A6C8-F57D6C64E3A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElectronicJournalCourseProject.Data", "ElectronicJournalCourseProject.Data\ElectronicJournalCourseProject.Data.csproj", "{7D19D506-0778-4312-A6C8-F57D6C64E3A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElectronicJournalCourseProject.WPFApplication", "ElectronicJournalCourseProject.WPFApplication\ElectronicJournalCourseProject.WPFApplication.csproj", "{C9F14823-72E0-4BCF-B2B1-FB3E0177BAE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElectronicJournalCourseProject.WPFApplication", "ElectronicJournalCourseProject.WPFApplication\ElectronicJournalCourseProject.WPFApplication.csproj", "{C9F14823-72E0-4BCF-B2B1-FB3E0177BAE8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{67ACA17F-3351-4439-B7E4-EF3038E11F63}"
+	ProjectSection(SolutionItems) = preProject
+		Appointments.json = Appointments.json
+		Groups.json = Groups.json
+		Lessons.json = Lessons.json
+		LoadList.json = LoadList.json
+		Marks.json = Marks.json
+		Plan.json = Plan.json
+		Specialties.json = Specialties.json
+		Students.json = Students.json
+		Subjects.json = Subjects.json
+		Teachers.json = Teachers.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

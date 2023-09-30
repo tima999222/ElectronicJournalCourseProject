@@ -1,0 +1,177 @@
+[
+    {
+        "MarkId": 1,
+        "LessonId": 1,
+        "StudentIdNumber": 1234567890,
+        "Attendance": true,
+        "MarkValue": 4
+    },
+    {
+        "MarkId": 2,
+        "LessonId": 2,
+        "StudentIdNumber": 2345678901,
+        "Attendance": true,
+        "MarkValue": 3
+    },
+    {
+        "MarkId": 3,
+        "LessonId": 3,
+        "StudentIdNumber": 3456789012,
+        "Attendance": true,
+        "MarkValue": 5
+    },
+    {
+        "MarkId": 4,
+        "LessonId": 4,
+        "StudentIdNumber": 4567890123,
+        "Attendance": true,
+        "MarkValue": 4
+    },
+    {
+        "MarkId": 5,
+        "LessonId": 5,
+        "StudentIdNumber": 5678901234,
+        "Attendance": true,
+        "MarkValue": 3
+    },
+    {
+        "MarkId": 6,
+        "LessonId": 6,
+        "StudentIdNumber": 6789012345,
+        "Attendance": true,
+        "MarkValue": 4
+    },
+    {
+        "MarkId": 7,
+        "LessonId": 7,
+        "StudentIdNumber": 7890123456,
+        "Attendance": true,
+        "MarkValue": 5
+    },
+    {
+        "MarkId": 8,
+        "LessonId": 8,
+        "StudentIdNumber": 8901234567,
+        "Attendance": true,
+        "MarkValue": 3
+    },
+    {
+        "MarkId": 9,
+        "LessonId": 9,
+        "StudentIdNumber": 9012345678,
+        "Attendance": true,
+        "MarkValue": 4
+    },
+    {
+        "MarkId": 10,
+        "LessonId": 10,
+        "StudentIdNumber": 10123456789,
+        "Attendance": true,
+        "MarkValue": 5
+    },
+    {
+        "MarkId": 11,
+        "LessonId": 11,
+        "StudentIdNumber": 11123456789,
+        "Attendance": true,
+        "MarkValue": 3
+    },
+    {
+        "MarkId": 12,
+        "LessonId": 12,
+        "StudentIdNumber": 12123456789,
+        "Attendance": true,
+        "MarkValue": 4
+    },
+    {
+        "MarkId": 13,
+        "LessonId": 13,
+        "StudentIdNumber": 13123456789,
+        "Attendance": true,
+        "MarkValue": 5
+    },
+    {
+        "MarkId": 14,
+        "LessonId": 14,
+        "StudentIdNumber": 14123456789,
+        "Attendance": true,
+        "MarkValue": 3
+    },
+    {
+        "MarkId": 15,
+        "LessonId": 15,
+        "StudentIdNumber": 15123456789,
+        "Attendance": true,
+        "MarkValue": 4
+    },
+    {
+        "MarkId": 16,
+        "LessonId": 16,
+        "StudentIdNumber": 16123456789,
+        "Attendance": true,
+        "MarkValue": 5
+    },
+    {
+        "MarkId": 17,
+        "LessonId": 17,
+        "StudentIdNumber": 17123456789,
+        "Attendance": true,
+        "MarkValue": 3
+    },
+    {
+        "MarkId": 18,
+        "LessonId": 18,
+        "StudentIdNumber": 18123456789,
+        "Attendance": true,
+        "MarkValue": 4
+    },
+    {
+        "MarkId": 19,
+        "LessonId": 19,
+        "StudentIdNumber": 19123456789,
+        "Attendance": true,
+        "MarkValue": 5
+    },
+    {
+        "MarkId": 20,
+        "LessonId": 20,
+        "StudentIdNumber": 20123456789,
+        "Attendance": true,
+        "MarkValue": 3
+    },
+    {
+        "MarkId": 21,
+        "LessonId": 21,
+        "StudentIdNumber": 21123456789,
+        "Attendance": true,
+        "MarkValue": 4
+    },
+    {
+        "MarkId": 22,
+        "LessonId": 22,
+        "StudentIdNumber": 22123456789,
+        "Attendance": true,
+        "MarkValue": 5
+    },
+    {
+        "MarkId": 23,
+        "LessonId": 23,
+        "StudentIdNumber": 23123456789,
+        "Attendance": true,
+        "MarkValue": 3
+    },
+    {
+        "MarkId": 24,
+        "LessonId": 24,
+        "StudentIdNumber": 24123456789,
+        "Attendance": true,
+        "MarkValue": 4
+    },
+    {
+        "MarkId": 25,
+        "LessonId": 25,
+        "StudentIdNumber": 25123456789,
+        "Attendance": true,
+        "MarkValue": 5
+    }
+]

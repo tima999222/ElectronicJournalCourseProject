@@ -1,0 +1,202 @@
+[
+    {
+        "StudentIdNumber": 1234567890,
+        "StudentSurname": "Иванов",
+        "StudentName": "Иван",
+        "StudentPatronymic": "Иванович",
+        "BirthDate": "2000-01-01",
+        "CurrentGroupId": 1,
+        "Login": "student1",
+        "Password": "StudentPassword1"
+    },
+    {
+        "StudentIdNumber": 2345678901,
+        "StudentSurname": "Петров",
+        "StudentName": "Петр",
+        "StudentPatronymic": "Петрович",
+        "BirthDate": "2001-02-02",
+        "CurrentGroupId": 2,
+        "Login": "student2",
+        "Password": "StudentPassword2"
+    },
+    {
+        "StudentIdNumber": 3456789012,
+        "StudentSurname": "Сидоров",
+        "StudentName": "Сидор",
+        "StudentPatronymic": "Сидорович",
+        "BirthDate": "2002-03-03",
+        "CurrentGroupId": 3,
+        "Login": "student3",
+        "Password": "StudentPassword3"
+    },
+    {
+        "StudentIdNumber": 4567890123,
+        "StudentSurname": "Козлов",
+        "StudentName": "Константин",
+        "StudentPatronymic": "Константинович",
+        "BirthDate": "2003-04-04",
+        "CurrentGroupId": 4,
+        "Login": "student4",
+        "Password": "StudentPassword4"
+    },
+    {
+        "StudentIdNumber": 5678901234,
+        "StudentSurname": "Игнатьев",
+        "StudentName": "Игорь",
+        "StudentPatronymic": "Игоревич",
+        "BirthDate": "2004-05-05",
+        "CurrentGroupId": 5,
+        "Login": "student5",
+        "Password": "StudentPassword5"
+    },
+    {
+        "StudentIdNumber": 6789012345,
+        "StudentSurname": "Федоров",
+        "StudentName": "Федор",
+        "StudentPatronymic": "Федорович",
+        "BirthDate": "2005-06-06",
+        "CurrentGroupId": 6,
+        "Login": "student6",
+        "Password": "StudentPassword6"
+    },
+    {
+        "StudentIdNumber": 7890123456,
+        "StudentSurname": "Александров",
+        "StudentName": "Александр",
+        "StudentPatronymic": "Александрович",
+        "BirthDate": "2006-07-07",
+        "CurrentGroupId": 7,
+        "Login": "student7",
+        "Password": "StudentPassword7"
+    },
+    {
+        "StudentIdNumber": 8901234567,
+        "StudentSurname": "Михайлов",
+        "StudentName": "Михаил",
+        "StudentPatronymic": "Михайлович",
+        "BirthDate": "2007-08-08",
+        "CurrentGroupId": 1,
+        "Login": "student8",
+        "Password": "StudentPassword8"
+    },
+    {
+        "StudentIdNumber": 9012345678,
+        "StudentSurname": "Егоров",
+        "StudentName": "Егор",
+        "StudentPatronymic": "Егорович",
+        "BirthDate": "2008-09-09",
+        "CurrentGroupId": 2,
+        "Login": "student9",
+        "Password": "StudentPassword9"
+    },
+    {
+        "StudentIdNumber": 10123456789,
+        "StudentSurname": "Андреев",
+        "StudentName": "Андрей",
+        "StudentPatronymic": "Андреевич",
+        "BirthDate": "2009-10-10",
+        "CurrentGroupId": 3,
+        "Login": "student10",
+        "Password": "StudentPassword10"
+    },
+    {
+        "StudentIdNumber": 11123456789,
+        "StudentSurname": "Дмитриев",
+        "StudentName": "Дмитрий",
+        "StudentPatronymic": "Дмитриевич",
+        "BirthDate": "2010-11-11",
+        "CurrentGroupId": 4,
+        "Login": "student11",
+        "Password": "StudentPassword11"
+    },
+    {
+        "StudentIdNumber": 12123456789,
+        "StudentSurname": "Антонов",
+        "StudentName": "Антон",
+        "StudentPatronymic": "Антонович",
+        "BirthDate": "2011-12-12",
+        "CurrentGroupId": 5,
+        "Login": "student12",
+        "Password": "StudentPassword12"
+    },
+    {
+        "StudentIdNumber": 13123456789,
+        "StudentSurname": "Васильев",
+        "StudentName": "Василий",
+        "StudentPatronymic": "Васильевич",
+        "BirthDate": "2012-01-13",
+        "CurrentGroupId": 6,
+        "Login": "student13",
+        "Password": "StudentPassword13"
+    },
+    {
+        "StudentIdNumber": 14123456789,
+        "StudentSurname": "Николаев",
+        "StudentName": "Николай",
+        "StudentPatronymic": "Николаевич",
+        "BirthDate": "2013-02-14",
+        "CurrentGroupId": 7,
+        "Login": "student14",
+        "Password": "StudentPassword14"
+    },
+    {
+        "StudentIdNumber": 15123456789,
+        "StudentSurname": "Сергеев",
+        "StudentName": "Сергей",
+        "StudentPatronymic": "Сергеевич",
+        "BirthDate": "2014-03-15",
+        "CurrentGroupId": 1,
+        "Login": "student15",
+        "Password": "StudentPassword15"
+    },
+    {
+        "StudentIdNumber": 16123456789,
+        "StudentSurname": "Алексеев",
+        "StudentName": "Алексей",
+        "StudentPatronymic": "Алексеевич",
+        "BirthDate": "2015-04-16",
+        "CurrentGroupId": 2,
+        "Login": "student16",
+        "Password": "StudentPassword16"
+    },
+    {
+        "StudentIdNumber": 17123456789,
+        "StudentSurname": "Ильин",
+        "StudentName": "Илья",
+        "StudentPatronymic": "Ильич",
+        "BirthDate": "2016-05-17",
+        "CurrentGroupId": 3,
+        "Login": "student17",
+        "Password": "StudentPassword17"
+    },
+    {
+        "StudentIdNumber": 18123456789,
+        "StudentSurname": "Артемов",
+        "StudentName": "Артем",
+        "StudentPatronymic": "Артемович",
+        "BirthDate": "2017-06-18",
+        "CurrentGroupId": 4,
+        "Login": "student18",
+        "Password": "StudentPassword18"
+    },
+    {
+        "StudentIdNumber": 19123456789,
+        "StudentSurname": "Иванова",
+        "StudentName": "Анна",
+        "StudentPatronymic": "Ивановна",
+        "BirthDate": "2018-07-19",
+        "CurrentGroupId": 5,
+        "Login": "student19",
+        "Password": "StudentPassword19"
+    },
+    {
+        "StudentIdNumber": 20123456789,
+        "StudentSurname": "Петрова",
+        "StudentName": "Мария",
+        "StudentPatronymic": "Петровна",
+        "BirthDate": "2019-08-20",
+        "CurrentGroupId": 6,
+        "Login": "student20",
+        "Password": "StudentPassword20"
+    }
+]

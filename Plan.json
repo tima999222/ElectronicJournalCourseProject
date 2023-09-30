@@ -1,0 +1,162 @@
+[
+    {
+        "PlanId": 1,
+        "SpecialtyCode": 1,
+        "SemesterNumber": 1,
+        "SubjectId": 1,
+        "HoursCount": 60,
+        "AcademicYear": 2023
+    },
+    {
+        "PlanId": 2,
+        "SpecialtyCode": 2,
+        "SemesterNumber": 1,
+        "SubjectId": 2,
+        "HoursCount": 75,
+        "AcademicYear": 2023
+    },
+    {
+        "PlanId": 3,
+        "SpecialtyCode": 3,
+        "SemesterNumber": 1,
+        "SubjectId": 3,
+        "HoursCount": 45,
+        "AcademicYear": 2023
+    },
+    {
+        "PlanId": 4,
+        "SpecialtyCode": 4,
+        "SemesterNumber": 1,
+        "SubjectId": 4,
+        "HoursCount": 90,
+        "AcademicYear": 2023
+    },
+    {
+        "PlanId": 5,
+        "SpecialtyCode": 5,
+        "SemesterNumber": 1,
+        "SubjectId": 5,
+        "HoursCount": 60,
+        "AcademicYear": 2023
+    },
+    {
+        "PlanId": 6,
+        "SpecialtyCode": 6,
+        "SemesterNumber": 1,
+        "SubjectId": 6,
+        "HoursCount": 75,
+        "AcademicYear": 2023
+    },
+    {
+        "PlanId": 7,
+        "SpecialtyCode": 7,
+        "SemesterNumber": 1,
+        "SubjectId": 7,
+        "HoursCount": 45,
+        "AcademicYear": 2023
+    },
+    {
+        "PlanId": 8,
+        "SpecialtyCode": 1,
+        "SemesterNumber": 2,
+        "SubjectId": 8,
+        "HoursCount": 90,
+        "AcademicYear": 2023
+    },
+    {
+        "PlanId": 9,
+        "SpecialtyCode": 2,
+        "SemesterNumber": 2,
+        "SubjectId": 9,
+        "HoursCount": 60,
+        "AcademicYear": 2023
+    },
+    {
+        "PlanId": 10,
+        "SpecialtyCode": 3,
+        "SemesterNumber": 2,
+        "SubjectId": 10,
+        "HoursCount": 75,
+        "AcademicYear": 2023
+    },
+    {
+        "PlanId": 11,
+        "SpecialtyCode": 4,
+        "SemesterNumber": 2,
+        "SubjectId": 11,
+        "HoursCount": 45,
+        "AcademicYear": 2023
+    },
+    {
+        "PlanId": 12,
+        "SpecialtyCode": 5,
+        "SemesterNumber": 2,
+        "SubjectId": 12,
+        "HoursCount": 90,
+        "AcademicYear": 2023
+    },
+    {
+        "PlanId": 13,
+        "SpecialtyCode": 6,
+        "SemesterNumber": 2,
+        "SubjectId": 13,
+        "HoursCount": 60,
+        "AcademicYear": 2023
+    },
+    {
+        "PlanId": 14,
+        "SpecialtyCode": 7,
+        "SemesterNumber": 2,
+        "SubjectId": 14,
+        "HoursCount": 75,
+        "AcademicYear": 2023
+    },
+    {
+        "PlanId": 15,
+        "SpecialtyCode": 1,
+        "SemesterNumber": 3,
+        "SubjectId": 15,
+        "HoursCount": 45,
+        "AcademicYear": 2023
+    },
+    {
+        "PlanId": 16,
+        "SpecialtyCode": 2,
+        "SemesterNumber": 3,
+        "SubjectId": 1,
+        "HoursCount": 90,
+        "AcademicYear": 2023
+    },
+    {
+        "PlanId": 17,
+        "SpecialtyCode": 3,
+        "SemesterNumber": 3,
+        "SubjectId": 2,
+        "HoursCount": 60,
+        "AcademicYear": 2023
+    },
+    {
+        "PlanId": 18,
+        "SpecialtyCode": 4,
+        "SemesterNumber": 3,
+        "SubjectId": 3,
+        "HoursCount": 75,
+        "AcademicYear": 2023
+    },
+    {
+        "PlanId": 19,
+        "SpecialtyCode": 5,
+        "SemesterNumber": 3,
+        "SubjectId": 4,
+        "HoursCount": 45,
+        "AcademicYear": 2023
+    },
+    {
+        "PlanId": 20,
+        "SpecialtyCode": 6,
+        "SemesterNumber": 3,
+        "SubjectId": 5,
+        "HoursCount": 90,
+        "AcademicYear": 2023
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "SpecialtyCode": 1,
+        "SpecialtyName": "Информационные технологии"
+    },
+    {
+        "SpecialtyCode": 2,
+        "SpecialtyName": "Медицина"
+    },
+    {
+        "SpecialtyCode": 3,
+        "SpecialtyName": "Экономика"
+    },
+    {
+        "SpecialtyCode": 4,
+        "SpecialtyName": "Психология"
+    },
+    {
+        "SpecialtyCode": 5,
+        "SpecialtyName": "Инженерия"
+    },
+    {
+        "SpecialtyCode": 6,
+        "SpecialtyName": "Химия"
+    },
+    {
+        "SpecialtyCode": 7,
+        "SpecialtyName": "Физика"
+    }
+]

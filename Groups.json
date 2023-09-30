@@ -1,0 +1,37 @@
+[
+    {
+        "GroupCode": 1,
+        "SpecialtyCode": 1,
+        "Abbreviature": "»“101"
+    },
+    {
+        "GroupCode": 2,
+        "SpecialtyCode": 2,
+        "Abbreviature": "Ã101"
+    },
+    {
+        "GroupCode": 3,
+        "SpecialtyCode": 3,
+        "Abbreviature": "› 101"
+    },
+    {
+        "GroupCode": 4,
+        "SpecialtyCode": 4,
+        "Abbreviature": "œ—101"
+    },
+    {
+        "GroupCode": 5,
+        "SpecialtyCode": 5,
+        "Abbreviature": "»101"
+    },
+    {
+        "GroupCode": 6,
+        "SpecialtyCode": 6,
+        "Abbreviature": "’101"
+    },
+    {
+        "GroupCode": 7,
+        "SpecialtyCode": 7,
+        "Abbreviature": "‘101"
+    }
+]

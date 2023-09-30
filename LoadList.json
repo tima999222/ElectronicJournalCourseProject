@@ -1,0 +1,122 @@
+[
+    {
+        "LoadListId": 1,
+        "TeacherId": 1,
+        "PlanId": 1,
+        "GroupId": 1
+    },
+    {
+        "LoadListId": 2,
+        "TeacherId": 2,
+        "PlanId": 2,
+        "GroupId": 2
+    },
+    {
+        "LoadListId": 3,
+        "TeacherId": 3,
+        "PlanId": 3,
+        "GroupId": 3
+    },
+    {
+        "LoadListId": 4,
+        "TeacherId": 4,
+        "PlanId": 4,
+        "GroupId": 4
+    },
+    {
+        "LoadListId": 5,
+        "TeacherId": 5,
+        "PlanId": 5,
+        "GroupId": 5
+    },
+    {
+        "LoadListId": 6,
+        "TeacherId": 6,
+        "PlanId": 6,
+        "GroupId": 6
+    },
+    {
+        "LoadListId": 7,
+        "TeacherId": 7,
+        "PlanId": 7,
+        "GroupId": 7
+    },
+    {
+        "LoadListId": 8,
+        "TeacherId": 8,
+        "PlanId": 8,
+        "GroupId": 8
+    },
+    {
+        "LoadListId": 9,
+        "TeacherId": 9,
+        "PlanId": 9,
+        "GroupId": 9
+    },
+    {
+        "LoadListId": 10,
+        "TeacherId": 10,
+        "PlanId": 10,
+        "GroupId": 10
+    },
+    {
+        "LoadListId": 11,
+        "TeacherId": 1,
+        "PlanId": 11,
+        "GroupId": 1
+    },
+    {
+        "LoadListId": 12,
+        "TeacherId": 2,
+        "PlanId": 12,
+        "GroupId": 2
+    },
+    {
+        "LoadListId": 13,
+        "TeacherId": 3,
+        "PlanId": 13,
+        "GroupId": 3
+    },
+    {
+        "LoadListId": 14,
+        "TeacherId": 4,
+        "PlanId": 14,
+        "GroupId": 4
+    },
+    {
+        "LoadListId": 15,
+        "TeacherId": 5,
+        "PlanId": 15,
+        "GroupId": 5
+    },
+    {
+        "LoadListId": 16,
+        "TeacherId": 6,
+        "PlanId": 16,
+        "GroupId": 6
+    },
+    {
+        "LoadListId": 17,
+        "TeacherId": 7,
+        "PlanId": 17,
+        "GroupId": 7
+    },
+    {
+        "LoadListId": 18,
+        "TeacherId": 8,
+        "PlanId": 18,
+        "GroupId": 8
+    },
+    {
+        "LoadListId": 19,
+        "TeacherId": 9,
+        "PlanId": 19,
+        "GroupId": 9
+    },
+    {
+        "LoadListId": 20,
+        "TeacherId": 10,
+        "PlanId": 20,
+        "GroupId": 10
+    }
+]
