@@ -1,6 +1,5 @@
 [
     {
-        "TeacherId": 1,
         "TeacherSurname": "Третьяков",
         "TeacherName": "Мирон",
         "TeacherPatronymic": "Вениаминович",
@@ -8,7 +7,6 @@
         "Password": "UniquePassword1"
     },
     {
-        "TeacherId": 2,
         "TeacherSurname": "Королев",
         "TeacherName": "Степан",
         "TeacherPatronymic": "Дмитриевич",
@@ -16,7 +14,6 @@
         "Password": "UniquePassword2"
     },
     {
-        "TeacherId": 3,
         "TeacherSurname": "Цветкова",
         "TeacherName": "Ирина",
         "TeacherPatronymic": "Вадимовна",
@@ -24,7 +21,6 @@
         "Password": "UniquePassword3"
     },
     {
-        "TeacherId": 4,
         "TeacherSurname": "Романов",
         "TeacherName": "Даниил",
         "TeacherPatronymic": "Максимович",
@@ -32,7 +28,6 @@
         "Password": "UniquePassword4"
     },
     {
-        "TeacherId": 5,
         "TeacherSurname": "Калинин",
         "TeacherName": "Никита",
         "TeacherPatronymic": "Александрович",
@@ -40,7 +35,6 @@
         "Password": "UniquePassword5"
     },
     {
-        "TeacherId": 6,
         "TeacherSurname": "Карпова",
         "TeacherName": "Елизавета",
         "TeacherPatronymic": "Максимовна",
@@ -48,7 +42,6 @@
         "Password": "UniquePassword6"
     },
     {
-        "TeacherId": 7,
         "TeacherSurname": "Киселева",
         "TeacherName": "Александра",
         "TeacherPatronymic": "Марковна",
@@ -56,7 +49,6 @@
         "Password": "UniquePassword7"
     },
     {
-        "TeacherId": 8,
         "TeacherSurname": "Воронцов",
         "TeacherName": "Тимофей",
         "TeacherPatronymic": "Дмитриевич",
@@ -64,7 +56,6 @@
         "Password": "UniquePassword8"
     },
     {
-        "TeacherId": 9,
         "TeacherSurname": "Тихонов",
         "TeacherName": "Игорь",
         "TeacherPatronymic": "Арсентьевич",
@@ -72,7 +63,6 @@
         "Password": "UniquePassword9"
     },
     {
-        "TeacherId": 10,
         "TeacherSurname": "Карасева",
         "TeacherName": "Таисия",
         "TeacherPatronymic": "Егоровна",
@@ -80,7 +70,6 @@
         "Password": "UniquePassword10"
     },
     {
-        "TeacherId": 11,
         "TeacherSurname": "Минаева",
         "TeacherName": "Дарья",
         "TeacherPatronymic": "Ильинична",
@@ -88,7 +77,6 @@
         "Password": "UniquePassword11"
     },
     {
-        "TeacherId": 12,
         "TeacherSurname": "Манаев",
         "TeacherName": "Станислав",
         "TeacherPatronymic": "Денисович",
@@ -96,7 +84,6 @@
         "Password": "UniquePassword12"
     },
     {
-        "TeacherId": 13,
         "TeacherSurname": "Краснов",
         "TeacherName": "Алексей",
         "TeacherPatronymic": "Вячеславович",
@@ -104,7 +91,6 @@
         "Password": "UniquePassword13"
     },
     {
-        "TeacherId": 14,
         "TeacherSurname": "Смирнов",
         "TeacherName": "Тимур",
         "TeacherPatronymic": "Петрович",
@@ -112,7 +98,6 @@
         "Password": "UniquePassword14"
     },
     {
-        "TeacherId": 15,
         "TeacherSurname": "Минаева",
         "TeacherName": "Дарья",
         "TeacherPatronymic": "Ильинична",

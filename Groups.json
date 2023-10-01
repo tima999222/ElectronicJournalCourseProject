@@ -1,36 +1,29 @@
 [
     {
-        "GroupCode": 1,
         "SpecialtyCode": 1,
         "Abbreviature": "ПКС-403"
     },
     {
-        "GroupCode": 2,
         "SpecialtyCode": 2,
         "Abbreviature": "ИБ-301"
     },
     {
-        "GroupCode": 3,
         "SpecialtyCode": 3,
         "Abbreviature": "Р-205"
     },
     {
-        "GroupCode": 4,
         "SpecialtyCode": 4,
         "Abbreviature": "КС-306"
     },
     {
-        "GroupCode": 5,
         "SpecialtyCode": 5,
         "Abbreviature": "ИСП-307"
     },
     {
-        "GroupCode": 6,
         "SpecialtyCode": 6,
         "Abbreviature": "СИС-102"
     },
     {
-        "GroupCode": 7,
         "SpecialtyCode": 7,
         "Abbreviature": "ОИБАС-209"
     }

@@ -8,6 +8,7 @@ namespace ElectronicJournalCourseProject.Data.Entities
     public class Specialty
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int SpecialtyCode { get; set; }
 
         [Required]

@@ -8,6 +8,7 @@ namespace ElectronicJournalCourseProject.Data.Entities
     public class Student
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public long StudentIdNumber { get; set; }
 
         [Required]

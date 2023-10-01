@@ -16,7 +16,7 @@ namespace ElectronicJournalCourseProject.Data.Entities
         public int SpecialtyCode { get; set; }
 
         [Required]
-        public int Abbreviature { get; set; }
+        public string Abbreviature { get; set; }
 
         #region Navigation
 
