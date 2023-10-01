@@ -1,62 +1,62 @@
 [
     {
         "SubjectId": 1,
-        "SubjectName": "����������"
+        "SubjectName": "Физическая культура"
     },
     {
         "SubjectId": 2,
-        "SubjectName": "������"
+        "SubjectName": "Философия"
     },
     {
         "SubjectId": 3,
-        "SubjectName": "�����"
+        "SubjectName": "Математика"
     },
     {
         "SubjectId": 4,
-        "SubjectName": "��������"
+        "SubjectName": "Программирование"
     },
     {
         "SubjectId": 5,
-        "SubjectName": "�������"
+        "SubjectName": "Теория вероятности"
     },
     {
         "SubjectId": 6,
-        "SubjectName": "����������"
+        "SubjectName": "Экономика"
     },
     {
         "SubjectId": 7,
-        "SubjectName": "���������"
+        "SubjectName": "Ин. язык"
     },
     {
         "SubjectId": 8,
-        "SubjectName": "�����������"
+        "SubjectName": "Базы данных"
     },
     {
         "SubjectId": 9,
-        "SubjectName": "����������� ����"
+        "SubjectName": "Психология общения"
     },
     {
         "SubjectId": 10,
-        "SubjectName": "�����������"
+        "SubjectName": "Управление проектами"
     },
     {
         "SubjectId": 11,
-        "SubjectName": "������"
+        "SubjectName": "Инструменты разработки"
     },
     {
         "SubjectId": 12,
-        "SubjectName": "��������������� ���������"
+        "SubjectName": "Мобильная разработка"
     },
     {
         "SubjectId": 13,
-        "SubjectName": "��������������"
+        "SubjectName": "Вэб разработка"
     },
     {
         "SubjectId": 14,
-        "SubjectName": "���������"
+        "SubjectName": "Основы предпринимательства"
     },
     {
         "SubjectId": 15,
-        "SubjectName": "����������"
+        "SubjectName": "Операционные системы"
     }
 ]

@@ -1,121 +1,121 @@
 [
     {
         "TeacherId": 1,
-        "TeacherSurname": "������",
-        "TeacherName": "����",
-        "TeacherPatronymic": "��������",
+        "TeacherSurname": "Третьяков",
+        "TeacherName": "Мирон",
+        "TeacherPatronymic": "Вениаминович",
         "Login": "teacher1",
         "Password": "UniquePassword1"
     },
     {
         "TeacherId": 2,
-        "TeacherSurname": "������",
-        "TeacherName": "����",
-        "TeacherPatronymic": "��������",
+        "TeacherSurname": "Королев",
+        "TeacherName": "Степан",
+        "TeacherPatronymic": "Дмитриевич",
         "Login": "teacher2",
         "Password": "UniquePassword2"
     },
     {
         "TeacherId": 3,
-        "TeacherSurname": "�������",
-        "TeacherName": "�����",
-        "TeacherPatronymic": "���������",
+        "TeacherSurname": "Цветкова",
+        "TeacherName": "Ирина",
+        "TeacherPatronymic": "Вадимовна",
         "Login": "teacher3",
         "Password": "UniquePassword3"
     },
     {
         "TeacherId": 4,
-        "TeacherSurname": "������",
-        "TeacherName": "����������",
-        "TeacherPatronymic": "��������������",
+        "TeacherSurname": "Романов",
+        "TeacherName": "Даниил",
+        "TeacherPatronymic": "Максимович",
         "Login": "teacher4",
         "Password": "UniquePassword4"
     },
     {
         "TeacherId": 5,
-        "TeacherSurname": "��������",
-        "TeacherName": "�����",
-        "TeacherPatronymic": "��������",
+        "TeacherSurname": "Калинин",
+        "TeacherName": "Никита",
+        "TeacherPatronymic": "Александрович",
         "Login": "teacher5",
         "Password": "UniquePassword5"
     },
     {
         "TeacherId": 6,
-        "TeacherSurname": "�������",
-        "TeacherName": "�����",
-        "TeacherPatronymic": "���������",
+        "TeacherSurname": "Карпова",
+        "TeacherName": "Елизавета",
+        "TeacherPatronymic": "Максимовна",
         "Login": "teacher6",
         "Password": "UniquePassword6"
     },
     {
         "TeacherId": 7,
-        "TeacherSurname": "�����������",
-        "TeacherName": "���������",
-        "TeacherPatronymic": "�������������",
+        "TeacherSurname": "Киселева",
+        "TeacherName": "Александра",
+        "TeacherPatronymic": "Марковна",
         "Login": "teacher7",
         "Password": "UniquePassword7"
     },
     {
         "TeacherId": 8,
-        "TeacherSurname": "��������",
-        "TeacherName": "������",
-        "TeacherPatronymic": "����������",
+        "TeacherSurname": "Воронцов",
+        "TeacherName": "Тимофей",
+        "TeacherPatronymic": "Дмитриевич",
         "Login": "teacher8",
         "Password": "UniquePassword8"
     },
     {
         "TeacherId": 9,
-        "TeacherSurname": "������",
-        "TeacherName": "����",
-        "TeacherPatronymic": "��������",
+        "TeacherSurname": "Тихонов",
+        "TeacherName": "Игорь",
+        "TeacherPatronymic": "Арсентьевич",
         "Login": "teacher9",
         "Password": "UniquePassword9"
     },
     {
         "TeacherId": 10,
-        "TeacherSurname": "�������",
-        "TeacherName": "������",
-        "TeacherPatronymic": "���������",
+        "TeacherSurname": "Карасева",
+        "TeacherName": "Таисия",
+        "TeacherPatronymic": "Егоровна",
         "Login": "teacher10",
         "Password": "UniquePassword10"
     },
     {
         "TeacherId": 11,
-        "TeacherSurname": "��������",
-        "TeacherName": "�������",
-        "TeacherPatronymic": "����������",
+        "TeacherSurname": "Минаева",
+        "TeacherName": "Дарья",
+        "TeacherPatronymic": "Ильинична",
         "Login": "teacher11",
         "Password": "UniquePassword11"
     },
     {
         "TeacherId": 12,
-        "TeacherSurname": "�������",
-        "TeacherName": "�����",
-        "TeacherPatronymic": "���������",
+        "TeacherSurname": "Манаев",
+        "TeacherName": "Станислав",
+        "TeacherPatronymic": "Денисович",
         "Login": "teacher12",
         "Password": "UniquePassword12"
     },
     {
         "TeacherId": 13,
-        "TeacherSurname": "��������",
-        "TeacherName": "�������",
-        "TeacherPatronymic": "����������",
+        "TeacherSurname": "Краснов",
+        "TeacherName": "Алексей",
+        "TeacherPatronymic": "Вячеславович",
         "Login": "teacher13",
         "Password": "UniquePassword13"
     },
     {
         "TeacherId": 14,
-        "TeacherSurname": "��������",
-        "TeacherName": "�������",
-        "TeacherPatronymic": "����������",
+        "TeacherSurname": "Смирнов",
+        "TeacherName": "Тимур",
+        "TeacherPatronymic": "Петрович",
         "Login": "teacher14",
         "Password": "UniquePassword14"
     },
     {
         "TeacherId": 15,
-        "TeacherSurname": "�������",
-        "TeacherName": "������",
-        "TeacherPatronymic": "���������",
+        "TeacherSurname": "Минаева",
+        "TeacherName": "Дарья",
+        "TeacherPatronymic": "Ильинична",
         "Login": "teacher15",
         "Password": "UniquePassword15"
     }

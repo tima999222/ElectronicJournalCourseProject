@@ -2,36 +2,36 @@
     {
         "GroupCode": 1,
         "SpecialtyCode": 1,
-        "Abbreviature": "ï¿½ï¿½101"
+        "Abbreviature": "ÏÊÑ-403"
     },
     {
         "GroupCode": 2,
         "SpecialtyCode": 2,
-        "Abbreviature": "ï¿½101"
+        "Abbreviature": "ÈÁ-301"
     },
     {
         "GroupCode": 3,
         "SpecialtyCode": 3,
-        "Abbreviature": "ï¿½ï¿½101"
+        "Abbreviature": "Ð-205"
     },
     {
         "GroupCode": 4,
         "SpecialtyCode": 4,
-        "Abbreviature": "ï¿½ï¿½101"
+        "Abbreviature": "ÊÑ-306"
     },
     {
         "GroupCode": 5,
         "SpecialtyCode": 5,
-        "Abbreviature": "ï¿½101"
+        "Abbreviature": "ÈÑÏ-307"
     },
     {
         "GroupCode": 6,
         "SpecialtyCode": 6,
-        "Abbreviature": "ï¿½101"
+        "Abbreviature": "ÑÈÑ-102"
     },
     {
         "GroupCode": 7,
         "SpecialtyCode": 7,
-        "Abbreviature": "ï¿½101"
+        "Abbreviature": "ÎÈÁÀÑ-209"
     }
 ]
