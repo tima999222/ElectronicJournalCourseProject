@@ -21,7 +21,7 @@ namespace ElectronicJournalCourseProject.Data.Entities
         [Required]
         public DateTime AppointmentDate { get; set; }
 
-        public DateTime DropOutDate { get; set; }
+        public DateTime? DropOutDate { get; set; }
 
         #region Navigation
 

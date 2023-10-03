@@ -9,7 +9,7 @@ namespace ElectronicJournalCourseProject.WPFApplication
     public partial class StartupWindow : Window
     {
         private ElectronicJournalContextDesignTimeFactory _factory;
-        private string[] _options = { "TIMA\\SQLEXPRESS", "ElectronicJournalDb" };
+        private string[] _options = { "DESKTOP-P72B69L\\SQLEXPRESS", "ElectronicJournalDb" };
 
         public StartupWindow() 
         {

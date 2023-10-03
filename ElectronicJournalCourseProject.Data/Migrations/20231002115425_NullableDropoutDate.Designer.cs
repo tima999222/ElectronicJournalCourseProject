@@ -4,6 +4,7 @@ using ElectronicJournalCourseProject.Data.DataContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ElectronicJournalCourseProject.Data.Migrations
 {
     [DbContext(typeof(ElectronicJournalContext))]
-    partial class ElectronicJournalContextModelSnapshot : ModelSnapshot
+    [Migration("20231002115425_NullableDropoutDate")]
+    partial class NullableDropoutDate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
