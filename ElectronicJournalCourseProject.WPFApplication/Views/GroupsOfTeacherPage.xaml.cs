@@ -15,8 +15,12 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
         {
             InitializeComponent();
             _loadListRepository = new LoadListRepository();
-            var list = _loadListRepository.GetListOfItem().ToList();
-            DGridGroups.ItemsSource = list;
+            DGridGroups.ItemsSource = _loadListRepository.GetGroupsAnsSubjectsForTeacher(TeacherSession.TeacherId);
+        }
+
+        private void EditButton_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+
         }
     }
 }

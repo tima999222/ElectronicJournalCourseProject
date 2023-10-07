@@ -30,6 +30,7 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
                 if (result == true)
                 {
                     MessageBox.Show("Вы вошли как учитель");
+                    TeacherSession.TeacherId = _loginRepository.GetTeacherNameByLoginAndPassword(login, password);
                     NavigationService.Navigate(new GroupsOfTeacherPage());
                 }
             }

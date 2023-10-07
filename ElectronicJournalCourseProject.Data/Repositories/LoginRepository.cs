@@ -1,4 +1,6 @@
-﻿namespace ElectronicJournalCourseProject.Data.Repositories
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace ElectronicJournalCourseProject.Data.Repositories
 {
     public class LoginRepository
     {
@@ -25,6 +27,18 @@
             var result = students.FirstOrDefault(s => s.Login == login && s.Password == password);
             if (result == null) return false;
             return true;
+        }
+
+        public int GetTeacherNameByLoginAndPassword(string username, string password)
+        {
+            var teacher = _teacherRepository.GetListOfItem().FirstOrDefault(t => t.Login == username && t.Password == password);
+
+            if (teacher == null)
+            {
+                throw new Exception();
+            }
+
+            return teacher.TeacherId;
         }
 
 

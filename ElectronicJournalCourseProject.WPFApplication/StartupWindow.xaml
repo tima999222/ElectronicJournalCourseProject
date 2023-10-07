@@ -8,7 +8,7 @@
         Title="StartupWindow" Height="450" Width="800">
     <Grid>
 		<Grid>
-			<Frame Source="./Views/SignInPage.xaml"></Frame>
+			<Frame Source="./Views/SignInPage.xaml" NavigationUIVisibility="Hidden"></Frame>
 		</Grid>
     </Grid>
 </Window>

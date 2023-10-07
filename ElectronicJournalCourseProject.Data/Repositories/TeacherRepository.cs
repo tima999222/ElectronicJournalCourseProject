@@ -6,5 +6,7 @@ namespace ElectronicJournalCourseProject.Data.Repositories
     {
         public TeacherRepository() : base()
         { }
+
+        
     }
 }
