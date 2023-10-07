@@ -11,8 +11,8 @@ namespace ElectronicJournalCourseProject.Tests
     {
         private ElectronicJournalContextDesignTimeFactory _designTimeFactory;
         private ElectronicJournalContext _context;
-        //private string[] _options = { "TIMA\\SQLEXPRESS", "ElectronicJournalDb" };
-        private string[] _options = { "DESKTOP-P72B69L\\SQLEXPRESS", "ElectronicJournalDb" };
+        private string[] _options = { "TIMA\\\\SQLEXPRESS", "ElectronicJournalDb" };
+        //private string[] _options = { "DESKTOP-P72B69L\\\\SQLEXPRESS", "ElectronicJournalDb" };
 
 
         [SetUp]
@@ -26,7 +26,7 @@ namespace ElectronicJournalCourseProject.Tests
         [Test]
         public void AddTeachersToDb()
         {
-            string json = File.ReadAllText("C:\\Users\\Тимофей\\Source\\Repos\\tima999222\\ElectronicJournalCourseProject\\Teachers.json");
+            string json = File.ReadAllText("C:\\Users\\Тимофей\\source\\repos\\ElectronicJournalCourseProject\\Teachers.json");
             var TeachersList = JsonSerializer.Deserialize<List<Teacher>>(json);
 
             if (TeachersList != null)
@@ -42,7 +42,7 @@ namespace ElectronicJournalCourseProject.Tests
         [Test]
         public void AddSubjectsToDb()
         {
-            string json = File.ReadAllText("C:\\Users\\Тимофей\\Source\\Repos\\tima999222\\ElectronicJournalCourseProject\\Subjects.json");
+            string json = File.ReadAllText("C:\\Users\\Тимофей\\source\\repos\\ElectronicJournalCourseProject\\Subjects.json");
             var SubjectsList = JsonSerializer.Deserialize<List<Subject>>(json);
 
             if (SubjectsList != null)
@@ -58,7 +58,7 @@ namespace ElectronicJournalCourseProject.Tests
         [Test]
         public void AddSpecToDb()
         {
-            string json = File.ReadAllText("C:\\Users\\Тимофей\\Source\\Repos\\tima999222\\ElectronicJournalCourseProject\\Specialties.json");
+            string json = File.ReadAllText("C:\\Users\\Тимофей\\source\\repos\\ElectronicJournalCourseProject\\Specialties.json");
             var SpecialtiesList = JsonSerializer.Deserialize<List<Specialty>>(json);
 
             if (SpecialtiesList != null)
@@ -74,7 +74,7 @@ namespace ElectronicJournalCourseProject.Tests
         [Test]
         public void AddPlansToDb()
         {
-            string json = File.ReadAllText("C:\\Users\\Тимофей\\Source\\Repos\\tima999222\\ElectronicJournalCourseProject\\Plan.json");
+            string json = File.ReadAllText("C:\\Users\\Тимофей\\source\\repos\\ElectronicJournalCourseProject\\Plan.json");
             var PlansList = JsonSerializer.Deserialize<List<Plan>>(json);
 
             if (PlansList != null)
@@ -90,7 +90,7 @@ namespace ElectronicJournalCourseProject.Tests
         [Test]
         public void AddGroupsToDb()
         {
-            string json = File.ReadAllText("C:\\Users\\Тимофей\\Source\\Repos\\tima999222\\ElectronicJournalCourseProject\\Groups.json");
+            string json = File.ReadAllText("C:\\Users\\Тимофей\\source\\repos\\ElectronicJournalCourseProject\\Groups.json");
             var GroupsList = JsonSerializer.Deserialize<List<Group>>(json);
 
             if (GroupsList != null)
@@ -106,7 +106,7 @@ namespace ElectronicJournalCourseProject.Tests
         [Test]
         public void AddStudentsToDb()
         {
-            string json = File.ReadAllText("C:\\Users\\Тимофей\\Source\\Repos\\tima999222\\ElectronicJournalCourseProject\\Students.json");
+            string json = File.ReadAllText("C:\\Users\\Тимофей\\source\\repos\\ElectronicJournalCourseProject\\Students.json");
             var StudentsList = JsonSerializer.Deserialize<List<Student>>(json);
 
             if (StudentsList != null)
@@ -122,7 +122,7 @@ namespace ElectronicJournalCourseProject.Tests
         [Test]
         public void AddAppointmentsToDb()
         {
-            string json = File.ReadAllText("C:\\Users\\Тимофей\\Source\\Repos\\tima999222\\ElectronicJournalCourseProject\\Appointments.json");
+            string json = File.ReadAllText("C:\\Users\\Тимофей\\source\\repos\\ElectronicJournalCourseProject\\Appointments.json");
             var AppointmentsList = JsonSerializer.Deserialize<List<Appointment>>(json);
 
             if (AppointmentsList != null)
@@ -138,7 +138,7 @@ namespace ElectronicJournalCourseProject.Tests
         [Test]
         public void AddLoadListsToDb()
         {
-            string json = File.ReadAllText("C:\\Users\\Тимофей\\Source\\Repos\\tima999222\\ElectronicJournalCourseProject\\LoadList.json");
+            string json = File.ReadAllText("C:\\Users\\Тимофей\\source\\repos\\ElectronicJournalCourseProject\\LoadList.json");
             var LoadList = JsonSerializer.Deserialize<List<LoadList>>(json);
 
             if (LoadList != null)
@@ -154,7 +154,7 @@ namespace ElectronicJournalCourseProject.Tests
         [Test]
         public void AddLessonsToDb()
         {
-            string json = File.ReadAllText("C:\\Users\\Тимофей\\Source\\Repos\\tima999222\\ElectronicJournalCourseProject\\Lessons.json");
+            string json = File.ReadAllText("C:\\Users\\Тимофей\\source\\repos\\ElectronicJournalCourseProject\\Lessons.json");
             var LessonsList = JsonSerializer.Deserialize<List<Lesson>>(json);
 
             if (LessonsList != null)
@@ -170,7 +170,7 @@ namespace ElectronicJournalCourseProject.Tests
         [Test]
         public void AddMarksToDb()
         {
-            string json = File.ReadAllText("C:\\Users\\Тимофей\\Source\\Repos\\tima999222\\ElectronicJournalCourseProject\\Marks.json");
+            string json = File.ReadAllText("C:\\Users\\Тимофей\\source\\repos\\ElectronicJournalCourseProject\\Marks.json");
             var MarksList = JsonSerializer.Deserialize<List<Mark>>(json);
 
             if (MarksList != null)
