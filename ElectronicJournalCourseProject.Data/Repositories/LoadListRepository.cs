@@ -27,5 +27,15 @@ namespace ElectronicJournalCourseProject.Data.Repositories
                 throw new Exception();
 
         }
+
+        public List<LoadList> GetGroupsAnsSubjectsForTeacher(int teacherId)
+        {
+            var query = from loadList in _context.LoadLists
+                        join teacher in _context.Teachers on loadList.TeacherId equals teacher.TeacherId
+                        where teacher.TeacherId == teacherId
+                        select loadList;
+
+            return query.ToList();
+        }
     }
 }

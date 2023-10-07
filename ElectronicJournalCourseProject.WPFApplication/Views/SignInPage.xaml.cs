@@ -30,6 +30,7 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
                 if (result == true)
                 {
                     MessageBox.Show("Вы вошли как учитель");
+                    NavigationService.Navigate(new GroupsOfTeacherPage());
                 }
             }
             else

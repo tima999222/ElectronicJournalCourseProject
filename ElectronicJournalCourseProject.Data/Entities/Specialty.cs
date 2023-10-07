@@ -18,9 +18,9 @@ namespace ElectronicJournalCourseProject.Data.Entities
 
         #region Navigation
 
-        public List<Plan> Plan { get; set; }
+        public virtual List<Plan> Plan { get; set; }
 
-        public List<Group> Group { get; set; }
+        public virtual List<Group> Group { get; set; }
 
         #endregion
     }

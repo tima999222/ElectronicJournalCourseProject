@@ -35,9 +35,9 @@ namespace ElectronicJournalCourseProject.Data.Entities
 
         #region Account 
 
-        public string Login { get; set; }
+        public virtual string Login { get; set; }
 
-        public string Password { get; set; }
+        public virtual string Password { get; set; }
 
         #endregion
     }

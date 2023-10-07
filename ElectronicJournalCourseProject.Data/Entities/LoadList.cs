@@ -25,13 +25,13 @@ namespace ElectronicJournalCourseProject.Data.Entities
 
         #region Navigation
 
-        public Plan Plan { get; set; }
+        public virtual Plan Plan { get; set; }
 
-        public Teacher Teacher { get; set; }
+        public virtual Teacher Teacher { get; set; }
 
-        public Group Group { get; set; }
+        public virtual Group Group { get; set; }
 
-        public List<Lesson> Lesson { get; set; }
+        public virtual List<Lesson> Lesson { get; set; }
 
         #endregion
     }

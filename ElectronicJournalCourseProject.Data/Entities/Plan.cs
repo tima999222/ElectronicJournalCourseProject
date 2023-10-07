@@ -30,12 +30,12 @@ namespace ElectronicJournalCourseProject.Data.Entities
 
         #region Navigation
 
-        public Subject Subject { get; set; }
+        public virtual Subject Subject { get; set; }
 
-        public Specialty Specialty { get; set; }
+        public virtual Specialty Specialty { get; set; }
 
 
-        public List<LoadList> LoadList { get; set; }
+        public virtual List<LoadList> LoadList { get; set; }
 
         #endregion
     }

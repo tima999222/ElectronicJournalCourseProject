@@ -20,9 +20,9 @@ namespace ElectronicJournalCourseProject.Data.Entities
 
         #region Navigation
 
-        public LoadList LoadList { get; set; }
+        public virtual LoadList LoadList { get; set; }
 
-        public List<Mark> Mark { get; set; }
+        public virtual List<Mark> Mark { get; set; }
 
         #endregion
     }

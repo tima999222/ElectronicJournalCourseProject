@@ -25,7 +25,7 @@ namespace ElectronicJournalCourseProject.Data.Entities
 
         #region Navigation
 
-        public Student Student { get; set; }
+        public virtual Student Student { get; set; }
 
         #endregion
     }

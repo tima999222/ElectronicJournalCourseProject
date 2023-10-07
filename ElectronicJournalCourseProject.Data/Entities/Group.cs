@@ -20,11 +20,11 @@ namespace ElectronicJournalCourseProject.Data.Entities
 
         #region Navigation
 
-        public Specialty Specialty { get; set; }
+        public virtual Specialty Specialty { get; set; }
 
-        public List<LoadList> LoadList { get; set; }
+        public virtual List<LoadList> LoadList { get; set; }
 
-        public List<Student> Student { get; set; }
+        public virtual List<Student> Student { get; set; }
 
         #endregion
     }
