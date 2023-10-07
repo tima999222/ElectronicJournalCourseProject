@@ -2,7 +2,6 @@ using ElectronicJournalCourseProject.Data.DataContext;
 using ElectronicJournalCourseProject.Data.Entities;
 using ElectronicJournalCourseProject.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
-using System.Numerics;
 using System.Text.Json;
 
 namespace ElectronicJournalCourseProject.Tests
@@ -11,8 +10,8 @@ namespace ElectronicJournalCourseProject.Tests
     {
         private ElectronicJournalContextDesignTimeFactory _designTimeFactory;
         private ElectronicJournalContext _context;
-        private string[] _options = { "TIMA\\\\SQLEXPRESS", "ElectronicJournalDb" };
-        //private string[] _options = { "DESKTOP-P72B69L\\\\SQLEXPRESS", "ElectronicJournalDb" };
+        private string[] _options = { "TIMA\\SQLEXPRESS", "ElectronicJournalDb" };
+        //private string[] _options = { "DESKTOP-P72B69L\\SQLEXPRESS", "ElectronicJournalDb" };
 
 
         [SetUp]

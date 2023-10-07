@@ -35,19 +35,19 @@ namespace ElectronicJournalCourseProject.Data.Entities
 
         #region Navigation
 
-        public Group Group { get; set; }
+        public virtual Group Group { get; set; }
 
-        public List<Appointment> Appointment { get; set; }
+        public virtual List<Appointment> Appointment { get; set; }
 
-        public List<Mark> Mark { get; set; }
+        public virtual List<Mark> Mark { get; set; }
 
         #endregion
 
         #region Account 
 
-        public virtual string Login { get; set; }
+        public string Login { get; set; }
 
-        public virtual string Password { get; set; }
+        public string Password { get; set; }
 
         #endregion
     }
