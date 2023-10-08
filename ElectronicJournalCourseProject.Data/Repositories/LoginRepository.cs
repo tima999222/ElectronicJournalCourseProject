@@ -41,6 +41,18 @@ namespace ElectronicJournalCourseProject.Data.Repositories
             return teacher.TeacherId;
         }
 
+        public long GetStudentIdByLoginAndPassword(string login, string password)
+        {
+            var student = _studentRepository.GetListOfItem().FirstOrDefault(t => t.Login == login && t.Password == password);
+
+            if (student == null)
+            {
+                throw new Exception();
+            }
+
+            return student.StudentIdNumber;
+        }
+
 
     }
 }

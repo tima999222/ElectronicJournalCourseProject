@@ -37,5 +37,16 @@ namespace ElectronicJournalCourseProject.Data.Repositories
 
             return query.ToList();
         }
+
+        public List<LoadList> GetSubjectsForStudent(long studentId)
+        {
+            var query = from loadList in _context.LoadLists
+                        join _group in _context.Groups on loadList.GroupId equals _group.GroupCode
+                        join student in _context.Students on _group.GroupCode equals student.CurrentGroupId
+                        where student.StudentIdNumber == studentId
+                        select loadList;
+
+            return query.ToList();
+        }
     }
 }

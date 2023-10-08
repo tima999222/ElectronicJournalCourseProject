@@ -40,6 +40,8 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
                 if (result == true)
                 {
                     MessageBox.Show("Вы вошли как студент");
+                    StudentSession.StudentId = _loginRepository.GetStudentIdByLoginAndPassword(login, password);
+                    NavigationService.Navigate(new SubjectsForStudentPage());
                 }
             }
 

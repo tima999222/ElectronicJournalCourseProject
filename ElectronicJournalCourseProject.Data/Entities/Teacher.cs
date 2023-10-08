@@ -40,5 +40,11 @@ namespace ElectronicJournalCourseProject.Data.Entities
         public virtual string Password { get; set; }
 
         #endregion
+
+        #region For Data Grid
+
+        [NotMapped]
+        public string TeacherFullName => TeacherSurname + " " + TeacherName + " " + TeacherPatronymic;
+        #endregion
     }
 }
