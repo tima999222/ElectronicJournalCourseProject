@@ -17,5 +17,13 @@ namespace ElectronicJournalCourseProject.Data.Repositories
             else
                 throw new Exception();
         }
+
+        public List<Student> GetStudentByGroupAbbreviature(string abbreviature)
+        {
+            var res = _context.Students.Where(s => s.Group.Abbreviature == abbreviature).ToList();
+            if (res != null) return res;
+
+            throw new Exception();
+        }
     }
 }

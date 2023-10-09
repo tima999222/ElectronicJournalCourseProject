@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using System.Windows.Controls;
+﻿using System.Windows.Controls;
 using ElectronicJournalCourseProject.Data.Repositories;
 
 namespace ElectronicJournalCourseProject.WPFApplication.Views
@@ -20,7 +19,10 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
 
         private void EditButton_Click(object sender, System.Windows.RoutedEventArgs e)
         {
+            string abbrebiature = "ПКС-403";
+            string subjectName = "Физическая культура";
 
+            NavigationService.Navigate(new MarksOfTheGroupPage(abbrebiature, subjectName));
         }
     }
 }

@@ -28,5 +28,10 @@ namespace ElectronicJournalCourseProject.Data.Repositories
 
             return marksValues.ToList();
         }
+
+        public bool IsStudentWithMarkOnDate(int studentId, DateTime date, string subjectName)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
