@@ -14,6 +14,8 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
+        <Button x:Name="GoBackButton" Grid.Row="0" Width="200" HorizontalAlignment="Left" Click="GoBackButton_Click">Назад</Button>
+        
         <DataGrid x:Name="DGridGroups" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Группа" FontSize="18" Binding="{Binding Group.Abbreviature}" Width="*"></DataGridTextColumn>

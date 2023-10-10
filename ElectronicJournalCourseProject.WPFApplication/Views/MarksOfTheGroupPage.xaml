@@ -10,15 +10,18 @@
       Background="White">
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="50"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <DataGrid x:Name="dataGrid" Grid.Row="0" IsReadOnly="True" AutoGenerateColumns="False">
+        <Button x:Name="GoBackButton" Grid.Row="0" Width="200" HorizontalAlignment="Left" Click="GoBackButton_Click">Назад</Button>
+        
+        <DataGrid x:Name="dataGrid" Grid.Row="1" IsReadOnly="True" AutoGenerateColumns="False">
             
         </DataGrid>
 
-        <Button x:Name="AddButton" Grid.Row="1" Width="200" Click="AddButton_Click">Добавить оценку</Button>
+        <Button x:Name="AddButton" Grid.Row="2" Width="200" Click="AddButton_Click">Добавить оценку</Button>
 
     </Grid>
 

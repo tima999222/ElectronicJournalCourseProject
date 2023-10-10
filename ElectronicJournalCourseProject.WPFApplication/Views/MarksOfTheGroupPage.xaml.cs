@@ -83,5 +83,10 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
         {
             NavigationService.Navigate(new AddMarkPage(_abbreviature, _subjectName));
         }
+
+        private void GoBackButton_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.GoBack();
+        }
     }
 }
