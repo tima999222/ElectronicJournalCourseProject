@@ -14,7 +14,7 @@ namespace ElectronicJournalCourseProject.Data.DataContext
                 var optionsBuilder = new DbContextOptionsBuilder<ElectronicJournalContext>();
                 optionsBuilder.UseSqlServer(
                     //$"Server={args[0]};Database={args[1]};Integrated Security=True;TrustServerCertificate=True"
-                    "Server=DESKTOP-P72B69\\SQLEXPRESS;Database=ElectronicJournalDb;Integrated Security=True;TrustServerCertificate=True"
+                    "Server=TIMA\\SQLEXPRESS;Database=ElectronicJournalDb;Integrated Security=True;TrustServerCertificate=True"
 
                 );
 

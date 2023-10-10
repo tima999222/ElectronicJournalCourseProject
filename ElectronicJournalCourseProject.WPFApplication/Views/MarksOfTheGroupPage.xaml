@@ -9,8 +9,5 @@
       Title="MarksOfTheGroupPage"
       Background="White">
     <Grid>
-        <DataGrid x:Name="dataGrid" AutoGenerateColumns="True" IsReadOnly="True">
-            
-        </DataGrid>
     </Grid>
 </Page>
