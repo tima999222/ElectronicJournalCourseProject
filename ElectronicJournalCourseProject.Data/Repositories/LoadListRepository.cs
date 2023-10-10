@@ -48,5 +48,17 @@ namespace ElectronicJournalCourseProject.Data.Repositories
 
             return query.ToList();
         }
+
+        public LoadList GetLoadListByTeacherAndSubjectAndGroup(int teacherId, string abbreviature, string subjectName)
+        {
+            var group = _context.Groups.FirstOrDefault(g => g.Abbreviature == abbreviature);
+            var spec = group.Specialty;
+
+            var plan = _context.Plans.FirstOrDefault(p => p.SpecialtyCode == spec.SpecialtyCode && p.Subject.SubjectName == subjectName);
+
+            var loadList = _context.LoadLists.FirstOrDefault(ll => ll.PlanId == plan.PlanId && ll.TeacherId == teacherId && ll.GroupId == group.GroupCode);
+
+            return loadList;
+        }
     }
 }

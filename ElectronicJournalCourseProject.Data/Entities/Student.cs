@@ -2,6 +2,7 @@
 
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace ElectronicJournalCourseProject.Data.Entities
 {
@@ -50,5 +51,14 @@ namespace ElectronicJournalCourseProject.Data.Entities
         public string Password { get; set; }
 
         #endregion
+
+        [NotMapped]
+        public string StudentFullName
+        {
+            get
+            {
+                return StudentSurname + " " + StudentName + " " + StudentPatronymic;
+            }
+        }
     }
 }

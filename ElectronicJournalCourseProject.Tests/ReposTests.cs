@@ -30,5 +30,12 @@ namespace ElectronicJournalCourseProject.Tests
             Console.Write(res1);
             Assert.IsNotNull(res.First().Specialty);
         }
+
+        [Test]
+        public void GetLoadList()
+        {
+            var res = _loadListRepository.GetLoadListByTeacherAndSubjectAndGroup(1, "ПКС-403", "Физическая культура");
+            Console.Write(res.LoadListId); 
+        }
     }
 }

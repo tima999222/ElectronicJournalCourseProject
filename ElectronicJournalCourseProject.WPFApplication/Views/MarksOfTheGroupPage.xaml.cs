@@ -30,10 +30,13 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
             _lessonRepository = new LessonRepository();
 
             InitializeComponent();
-            Loaded += LoadPage;
+            LoadPage();
         }
 
-        private void LoadPage(object sender, RoutedEventArgs e)
+        //Метод для заполнения DataGrid данными
+        #region Load Page
+
+        private void LoadPage()
         {
             var studentsInGroup = _studentRepository.GetStudentByGroupAbbreviature(_abbreviature);
 
@@ -61,12 +64,6 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
                 dataTable.Rows.Add(row1);
             }
 
-            DataGrid dataGrid = new DataGrid()
-            {
-                IsReadOnly = true,
-                AutoGenerateColumns = false
-            };
-
             foreach (DataColumn column in dataTable.Columns)
             {
                 DataGridTextColumn textColumn = new DataGridTextColumn()
@@ -78,8 +75,13 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
             }
 
             dataGrid.ItemsSource = dataTable.DefaultView;
+        }
 
-            Content = dataGrid;
-        }  
+        #endregion
+
+        private void AddButton_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new AddMarkPage(_abbreviature, _subjectName));
+        }
     }
 }

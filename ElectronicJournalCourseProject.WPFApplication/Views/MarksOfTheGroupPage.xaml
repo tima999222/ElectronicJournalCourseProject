@@ -9,5 +9,18 @@
       Title="MarksOfTheGroupPage"
       Background="White">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <DataGrid x:Name="dataGrid" Grid.Row="0" IsReadOnly="True" AutoGenerateColumns="False">
+            
+        </DataGrid>
+
+        <Button x:Name="AddButton" Grid.Row="1" Width="200" Click="AddButton_Click">Добавить оценку</Button>
+
     </Grid>
+
+    
 </Page>
