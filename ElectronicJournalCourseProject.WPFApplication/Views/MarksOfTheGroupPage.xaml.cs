@@ -47,10 +47,12 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
             {
                 var row1 = dataTable.NewRow();
                 row1["Студент(ка)"] = st.StudentSurname + " " + st.StudentName + "." + st.StudentPatronymic;
-                
+                foreach (var m in st.Mark)
+                {
+                    row1[m.Lesson.LessonDate.ToString("dd/MM/yyyy")] = m.MarkValue;
+                }
+                dataTable.Rows.Add(row1);
             }
-
-            
 
             dataGrid.ItemsSource = dataTable.DefaultView;
         }  
