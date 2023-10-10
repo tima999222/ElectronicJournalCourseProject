@@ -39,7 +39,6 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
             InitializeComponent();
 
             StudentsComboBox.ItemsSource = _studentRepository.GetStudentByGroupAbbreviature(_abbreviature);
-            //DataContext = _currentMark;
         }
 
 
