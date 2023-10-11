@@ -45,7 +45,7 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
 
             var dateTimesOfLesson = new List<DateTime>();
 
-            foreach (DateTime dt in _lessonRepository.GetLessonDatesBySubjectName(_subjectName))
+            foreach (DateTime dt in _lessonRepository.GetLessonDatesBySubjectName(_subjectName).Distinct().ToList())
             {
                 dataTable.Columns.Add($"_{dt.Day}_{dt.Month}_{dt.Year}_", typeof(string));
                 dataTable.Columns[$"_{dt.Day}_{dt.Month}_{dt.Year}_"]!.Caption = dt.ToString("dd/MM/yyyy");
@@ -87,6 +87,11 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
         private void GoBackButton_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.GoBack();
+        }
+
+        private void EditButton_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new EditMarkPage(_subjectName, _abbreviature));
         }
     }
 }
