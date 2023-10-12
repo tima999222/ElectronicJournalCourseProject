@@ -125,16 +125,17 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
-            int markValue = int.Parse(markTextBox.Text);
-
-            if (markValue < 2 || markValue > 5)
-            {
-                MessageBox.Show("Оценка должна быть в формате от 2 до 5");
-                return;
-            }
-
             try
             {
+                int markValue = int.Parse(markTextBox.Text);
+
+                if (markValue < 2 || markValue > 5)
+                {
+                    MessageBox.Show("Оценка должна быть в формате от 2 до 5");
+                    return;
+                }
+
+            
                 _mark.MarkValue = markValue;
                 _markRepository.UpdateItem(_mark);
                 MessageBox.Show("Оценка отредактирована");

@@ -1,4 +1,5 @@
-﻿using System.Windows.Controls;
+﻿using System.Windows;
+using System.Windows.Controls;
 using ElectronicJournalCourseProject.Data.Entities;
 using ElectronicJournalCourseProject.Data.Repositories;
 
@@ -22,8 +23,14 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
         {
             var loadList = DGridGroups.SelectedItem as LoadList;
 
-            string abbrebiature = loadList.Group.Abbreviature; //"ПКС-403";
-            string subjectName = loadList.Plan.Subject.SubjectName; //"Физическая культура";
+            if (loadList == null) 
+            {
+                MessageBox.Show("Не удалось получить нагрузочный лист");
+                return;
+            }
+
+            string abbrebiature = loadList.Group.Abbreviature;
+            string subjectName = loadList.Plan.Subject.SubjectName; 
 
             NavigationService.Navigate(new MarksOfTheGroupPage(abbrebiature, subjectName));
         }

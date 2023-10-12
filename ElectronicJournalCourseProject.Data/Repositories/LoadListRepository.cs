@@ -12,7 +12,6 @@ namespace ElectronicJournalCourseProject.Data.Repositories
         public List<LoadList> GetAllLoadListsForStudentById(int studentId)
         {
             var loadList = new List<LoadList>();
-            // groupId = this.GetStudentById(studentId).CurrentGroupId;
             var student = _context.Students.FirstOrDefault(s => s.StudentIdNumber == studentId);
 
             if (student == null)
