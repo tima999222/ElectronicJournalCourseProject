@@ -3,6 +3,7 @@ using ElectronicJournalCourseProject.Data.Repositories;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using System;
 using System.Linq;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Navigation;
@@ -51,7 +52,21 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
             var ll = _loadListRepository.GetLoadListByTeacherAndSubjectAndGroup(TeacherSession.TeacherId, _abbreviature, _subjectName);
-            var lesson = new Lesson() { LessonDate = (DateTime)LessonDatePicker.SelectedDate, LoadListId = ll.LoadListId };
+
+            if (ll == null)
+            {
+                MessageBox.Show("Невозможно получить нагрузочный лист");
+                return;
+            }
+
+            var selectedDate = LessonDatePicker.SelectedDate;
+
+            if (selectedDate == null)
+            {
+                MessageBox.Show("Дата не выбрана");
+                return;
+            }
+            var lesson = new Lesson() { LessonDate = (DateTime)selectedDate, LoadListId = ll.LoadListId };
 
             try
             {
@@ -64,10 +79,24 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
 
             var student = StudentsComboBox.SelectedItem as Student;
 
-            _currentMark.StudentIdNumber = student.StudentIdNumber;
-            _currentMark.MarkValue = int.Parse(MarkTextBox.Text);
-            _currentMark.Attendance = true;
-            _currentMark.LessonId = lesson.LessonId;
+            StringBuilder errors = new StringBuilder();
+
+            if (student != null)
+            {
+                _currentMark.StudentIdNumber = student.StudentIdNumber;
+                _currentMark.MarkValue = int.Parse(MarkTextBox.Text);
+                _currentMark.Attendance = true;
+                _currentMark.LessonId = lesson.LessonId;
+            }
+
+            if (_currentMark.MarkValue < 2 || _currentMark.MarkValue > 5) errors.AppendLine("Оценка должна быть в формате от 2 до 5");
+
+            if (errors.Length > 0)
+            {
+                MessageBox.Show(errors.ToString());
+                return;
+            }
+          
 
             try
             {

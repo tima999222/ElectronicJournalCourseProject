@@ -53,7 +53,16 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
         private void DatesComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var lesson = DatesComboBox.SelectedItem as Lesson;
-            _lessonDate = lesson.LessonDate;    
+
+            if (lesson == null)
+            {
+                MessageBox.Show("Не удалось дату занятия");
+                return;
+            }
+
+            _lessonDate = lesson.LessonDate;
+
+            #region StackPanel editing
 
             Label label1 = new Label()
             {
@@ -74,12 +83,23 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
 
             stackPanel.Children.Add(label1);
             stackPanel.Children.Add(studentComboBox);
+
+            #endregion
         }
 
         private void StudentsComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             _student = studentComboBox.SelectedItem as Student;
+
+            if (_student == null)
+            {
+                MessageBox.Show("Не удалось получить студента");
+                return;
+            }
+
             _mark = _markRepository.GetMarkOnLessonForStudent(_lessonDate, _student);
+
+            #region StackPanel editing
 
             markTextBox = new TextBox()
             {
@@ -99,11 +119,19 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
 
             stackPanel.Children.Add(markTextBox);
             stackPanel.Children.Add(saveButton);
+
+            #endregion
         }
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
             int markValue = int.Parse(markTextBox.Text);
+
+            if (markValue < 2 || markValue > 5)
+            {
+                MessageBox.Show("Оценка должна быть в формате от 2 до 5");
+                return;
+            }
 
             try
             {
