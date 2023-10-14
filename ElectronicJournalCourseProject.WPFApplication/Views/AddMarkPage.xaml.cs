@@ -79,17 +79,38 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
 
             var student = StudentsComboBox.SelectedItem as Student;
 
+            var a = AttendanceCheckBox.IsChecked;
+            
+            if (a == null)
+            {
+                MessageBox.Show("Ошибка");
+                return;
+            }
+
             StringBuilder errors = new StringBuilder();
 
             if (student != null)
             {
                 _currentMark.StudentIdNumber = student.StudentIdNumber;
-                _currentMark.MarkValue = int.Parse(MarkTextBox.Text);
-                _currentMark.Attendance = true;
+                
+                if (!string.IsNullOrWhiteSpace(MarkTextBox.Text))
+                    _currentMark.MarkValue = int.Parse(MarkTextBox.Text);
+                else
+                    _currentMark.MarkValue = null;
+                _currentMark.Attendance = (bool)a;
                 _currentMark.LessonId = lesson.LessonId;
+
+                DateTime? l = _lessonRepository.GetLessonDatesBySubjectName(_subjectName).FirstOrDefault(d => d == lesson.LessonDate);
+
+                if (_markRepository.GetListOfItem().ToList().FirstOrDefault(m => m.Lesson.LessonDate == l && m.StudentIdNumber == student.StudentIdNumber && ll.Plan.Subject.SubjectName == _subjectName) != null)
+                    errors.AppendLine("На эту дату уже есть оценка");
             }
 
-            if (_currentMark.MarkValue < 2 || _currentMark.MarkValue > 5) errors.AppendLine("Оценка должна быть в формате от 2 до 5");
+            if (_currentMark.Attendance == false && _currentMark.MarkValue != null)
+                errors.AppendLine("Нельзя поставить оценку на дату в которую студент отсутсвовал");
+
+            if ((_currentMark.MarkValue < 2 || _currentMark.MarkValue > 5) && _currentMark.MarkValue != null) 
+                errors.AppendLine("Оценка должна быть в формате от 2 до 5");
 
             if (errors.Length > 0)
             {
@@ -97,7 +118,6 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
                 return;
             }
           
-
             try
             {
                 _markRepository.AddItem(_currentMark);

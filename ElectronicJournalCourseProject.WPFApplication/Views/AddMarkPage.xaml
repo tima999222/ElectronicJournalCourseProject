@@ -21,7 +21,8 @@
             <DatePicker x:Name="LessonDatePicker"></DatePicker>
             <Label FontSize="14">Студент</Label>
             <ComboBox x:Name="StudentsComboBox" SelectedItem="{Binding Student}" DisplayMemberPath="StudentFullName"></ComboBox>
-            <Label FontSize="14">Оценка</Label>
+            <CheckBox x:Name="AttendanceCheckBox" Content="Присутствие" FontSize="14" Margin="0 5 0 0"></CheckBox>
+            <Label FontSize="14">Оценка(Оставьте пустым если нет оценки)</Label>
             <TextBox x:Name="MarkTextBox" Height="30" Text="{Binding MarkValue}"></TextBox>
             <Button x:Name="SaveButton" Height="30" Margin="0 5 0 0" Click="SaveButton_Click">Сохранить</Button>
         </StackPanel>
