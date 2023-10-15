@@ -24,7 +24,7 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
 
         private DateTime _lessonDate;
         private Student _student;
-        private Mark _mark;
+        private Mark? _mark;
 
         private ComboBox studentComboBox;
         private TextBox markTextBox;
@@ -70,9 +70,11 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
                 Content = "Выберите студента с оценкой на выбранную дату"
             };
 
+            var st = _studentRepository.HaveMarkOnThisLesson(_lessonDate, _abbreviature, TeacherSession.TeacherId);
+
             studentComboBox = new ComboBox()
             {
-                ItemsSource = _studentRepository.HaveMarkOnThisLesson(_lessonDate),
+                ItemsSource = st,
                 DisplayMemberPath = "StudentFullName"
             };
 
@@ -98,6 +100,12 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
             }
 
             _mark = _markRepository.GetMarkOnLessonForStudent(_lessonDate, _student);
+
+            if (_mark == null)
+            {
+                MessageBox.Show("Не удалось получить оценку для студента");
+                return;
+            }
 
             #region StackPanel editing
 

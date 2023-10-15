@@ -27,13 +27,17 @@ namespace ElectronicJournalCourseProject.Data.Repositories
             throw new Exception();
         }
 
-        public List<Student> HaveMarkOnThisLesson(DateTime lessonDate)
+        public List<Student> HaveMarkOnThisLesson(DateTime lessonDate, string abbreviature, int teacherId)
         {
 
+            var group1 = _context.Groups.FirstOrDefault(g => g.Abbreviature == abbreviature);
+            var ll = _context.LoadLists.FirstOrDefault(ll => ll.TeacherId == teacherId && ll.Group.GroupCode == group1.GroupCode);
+
             var res = from student in _context.Students
+                      join _group in _context.Groups on student.CurrentGroupId equals _group.GroupCode
                       join mark in _context.Marks on student.StudentIdNumber equals mark.StudentIdNumber
                       join _lesson in _context.Lessons on mark.LessonId equals _lesson.LessonId
-                      where _lesson.LessonDate == lessonDate  
+                      where _lesson.LessonDate == lessonDate && ll.LoadListId == _lesson.LoadListId && _group.GroupCode == group1.GroupCode
                       select student;
 
             return res.ToList();
