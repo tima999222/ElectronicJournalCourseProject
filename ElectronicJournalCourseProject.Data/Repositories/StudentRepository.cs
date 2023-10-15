@@ -37,7 +37,7 @@ namespace ElectronicJournalCourseProject.Data.Repositories
                       join _group in _context.Groups on student.CurrentGroupId equals _group.GroupCode
                       join mark in _context.Marks on student.StudentIdNumber equals mark.StudentIdNumber
                       join _lesson in _context.Lessons on mark.LessonId equals _lesson.LessonId
-                      where _lesson.LessonDate == lessonDate && ll.LoadListId == _lesson.LoadListId && _group.GroupCode == group1.GroupCode
+                      where _lesson.LessonDate == lessonDate && ll.LoadListId == _lesson.LoadListId && _group.GroupCode == group1.GroupCode && mark.MarkValue != null
                       select student;
 
             return res.ToList();
