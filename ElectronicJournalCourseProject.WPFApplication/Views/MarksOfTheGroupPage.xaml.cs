@@ -18,6 +18,7 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
 
         private StudentRepository _studentRepository;
         private LessonRepository _lessonRepository;
+        private MarkRepository _markRepositoy;
 
         private string _abbreviature;
         private string _subjectName;
@@ -28,6 +29,7 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
             _subjectName = subjectName;
             _studentRepository = new StudentRepository();
             _lessonRepository = new LessonRepository();
+            _markRepositoy = new MarkRepository();
 
             InitializeComponent();
             LoadPage();
@@ -45,7 +47,9 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
 
             var dateTimesOfLesson = new List<DateTime>();
 
-            foreach (DateTime dt in _lessonRepository.GetLessonDatesBySubjectName(_subjectName).Distinct().ToList())
+            var dates = _lessonRepository.GetLessonDatesBySubjectNameForGroup(_subjectName, _abbreviature, TeacherSession.TeacherId).Distinct().ToList();
+
+            foreach (DateTime dt in dates)
             {
                 dataTable.Columns.Add($"_{dt.Day}_{dt.Month}_{dt.Year}_", typeof(string));
                 dataTable.Columns[$"_{dt.Day}_{dt.Month}_{dt.Year}_"]!.Caption = dt.ToString("dd/MM/yyyy");
@@ -56,7 +60,10 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
             {
                 var row1 = dataTable.NewRow();
                 row1["Студент(ка)"] = st.StudentSurname + " " + st.StudentName[0] + "." + st.StudentPatronymic[0];
-                foreach (var m in st.Mark)
+
+
+                var marks = _markRepositoy.GetMarksForStudentBySubjectName(st.StudentIdNumber, _subjectName, TeacherSession.TeacherId);
+                foreach (var m in marks)
                 {
                     if (dateTimesOfLesson.Contains(m.Lesson.LessonDate))
                         row1[$"_{m.Lesson.LessonDate.Day}_{m.Lesson.LessonDate.Month}_{m.Lesson.LessonDate.Year}_"] = m.MarkValue;

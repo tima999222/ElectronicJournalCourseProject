@@ -100,9 +100,11 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
                 _currentMark.Attendance = (bool)a;
                 _currentMark.LessonId = lesson.LessonId;
 
-                DateTime? l = _lessonRepository.GetLessonDatesBySubjectName(_subjectName).FirstOrDefault(d => d == lesson.LessonDate);
+                DateTime? l = _lessonRepository.GetLessonDatesBySubjectNameForGroup(_subjectName, _abbreviature, TeacherSession.TeacherId).FirstOrDefault(d => d == lesson.LessonDate);
 
-                if (_markRepository.GetListOfItem().ToList().FirstOrDefault(m => m.Lesson.LessonDate == l && m.StudentIdNumber == student.StudentIdNumber && ll.Plan.Subject.SubjectName == _subjectName) != null)
+                var mark = _markRepository.GetListOfItem().ToList().FirstOrDefault(m => m.Lesson.LessonDate == l && m.StudentIdNumber == student.StudentIdNumber && m.Lesson.LoadListId == ll.LoadListId);
+
+                if (mark != null)
                     errors.AppendLine("На эту дату уже есть оценка");
             }
 

@@ -33,5 +33,14 @@ namespace ElectronicJournalCourseProject.Data.Repositories
 
             return marks;
         }
+
+        public List<Mark> GetMarksForStudentBySubjectName(long studentId, string subjectName, int teacherId)
+        {
+            var student = _context.Students.FirstOrDefault(s => s.StudentIdNumber == studentId);
+            var ll = new LoadListRepository().GetLoadListByTeacherAndSubjectAndGroup(teacherId, student.Group.Abbreviature, subjectName);
+            var marks = _context.Marks.Where(m => m.StudentIdNumber == studentId && m.Lesson.LoadListId == ll.LoadListId);
+
+            return marks.ToList();
+        }
     }
 }
