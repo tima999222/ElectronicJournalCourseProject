@@ -1,5 +1,4 @@
-﻿using ElectronicJournalCourseProject.Data.DataContext;
-using System.Windows;
+﻿using System.Windows;
 
 namespace ElectronicJournalCourseProject.WPFApplication
 {
@@ -8,14 +7,10 @@ namespace ElectronicJournalCourseProject.WPFApplication
     /// </summary>
     public partial class StartupWindow : Window
     {
-        private ElectronicJournalContextDesignTimeFactory _factory;
-        private string[] _options = { "DESKTOP-P72B69L\\SQLEXPRESS", "ElectronicJournalDb" };
 
         public StartupWindow() 
-        {
-            _factory = new ElectronicJournalContextDesignTimeFactory();
-            var context = _factory.CreateDbContext(_options);
-            context.Database.EnsureCreated();
+        { 
+            EntryPoint.StartApp();
             InitializeComponent();
         }
     }

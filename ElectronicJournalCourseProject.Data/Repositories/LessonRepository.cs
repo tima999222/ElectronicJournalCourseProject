@@ -27,15 +27,6 @@ namespace ElectronicJournalCourseProject.Data.Repositories
                       join subject in _context.Subjects on plan.SubjectId equals subject.SubjectId
                       where subject.SubjectName == subjectName && loadList.Group.Abbreviature == abbreviature
                       select lessons;
-/*
-            var group = _context.Groups.FirstOrDefault(g => g.Abbreviature == abbreviature);
-            var spec = group.Specialty;
-            var plan = _context.Plans.FirstOrDefault(p => p.SpecialtyCode == spec.SpecialtyCode && p.Subject.SubjectName == subjectName);
-
-            var loadList = _context.LoadLists.FirstOrDefault(ll => ll.PlanId == plan.PlanId && ll.TeacherId == teacherId && ll.GroupId == group.GroupCode);
-
-
-            var res = _context.Lessons.Where(l => l.LoadListId == loadList.LoadListId);*/
 
             var dtList = new List<DateTime>();
 
