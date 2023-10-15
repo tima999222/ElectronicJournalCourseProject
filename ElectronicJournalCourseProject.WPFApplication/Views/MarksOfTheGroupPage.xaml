@@ -17,7 +17,7 @@
 
         <Button x:Name="GoBackButton" Grid.Row="0" Width="200" HorizontalAlignment="Left" Click="GoBackButton_Click">Назад</Button>
         
-        <DataGrid x:Name="dataGrid" Grid.Row="1" IsReadOnly="True" AutoGenerateColumns="False">
+        <DataGrid x:Name="dataGrid" Grid.Row="1" IsReadOnly="True" AutoGenerateColumns="False" CanUserSortColumns="False">
             
         </DataGrid>
 

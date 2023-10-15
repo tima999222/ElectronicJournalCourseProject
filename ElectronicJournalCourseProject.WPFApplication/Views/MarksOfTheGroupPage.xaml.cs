@@ -1,4 +1,5 @@
-﻿using ElectronicJournalCourseProject.Data.Repositories;
+﻿using ElectronicJournalCourseProject.Data.Entities;
+using ElectronicJournalCourseProject.Data.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -6,6 +7,7 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
+using System.Windows.Media;
 
 namespace ElectronicJournalCourseProject.WPFApplication.Views
 {
@@ -66,7 +68,15 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
                 foreach (var m in marks)
                 {
                     if (dateTimesOfLesson.Contains(m.Lesson.LessonDate))
-                        row1[$"_{m.Lesson.LessonDate.Day}_{m.Lesson.LessonDate.Month}_{m.Lesson.LessonDate.Year}_"] = m.MarkValue;
+                        if (m.Attendance == true)
+                        {
+                            row1[$"_{m.Lesson.LessonDate.Day}_{m.Lesson.LessonDate.Month}_{m.Lesson.LessonDate.Year}_"] = m.MarkValue;
+                        }
+                        else
+                        {
+                            row1[$"_{m.Lesson.LessonDate.Day}_{m.Lesson.LessonDate.Month}_{m.Lesson.LessonDate.Year}_"] = "НБ";
+                        }
+                       
                 }
                 dataTable.Rows.Add(row1);
             }
