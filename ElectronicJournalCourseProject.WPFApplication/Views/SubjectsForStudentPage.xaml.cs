@@ -18,6 +18,7 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
             _loadListRepository = new LoadListRepository();
             InitializeComponent();
             var list = _loadListRepository.GetSubjectsForStudent(StudentSession.StudentId);
+            NameLabel.Content = StudentSession.StudentName;
             DGridSubjects.ItemsSource = list;
         }
 

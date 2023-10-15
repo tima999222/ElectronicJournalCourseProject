@@ -10,7 +10,7 @@ namespace ElectronicJournalCourseProject.Data.Repositories
 
         }
 
-        public Student GetStudentById(int id)
+        public Student GetStudentById(long id)
         {
             var res = GetListOfItem().FirstOrDefault(s => s.StudentIdNumber == id);
             if (res != null)
