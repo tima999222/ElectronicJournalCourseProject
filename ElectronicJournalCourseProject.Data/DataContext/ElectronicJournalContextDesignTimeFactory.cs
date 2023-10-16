@@ -13,7 +13,8 @@ namespace ElectronicJournalCourseProject.Data.DataContext
         {
             if (_context == null)
             {
-                _connectionString = "Server=DESKTOP-P72B69L\\SQLEXPRESS;Database=ElectronicJournalDb;Integrated Security=True;TrustServerCertificate=True";
+                // DESKTOP-P72B69L
+                _connectionString = "Server=TIMA\\SQLEXPRESS;Database=ElectronicJournalDb;Integrated Security=True;TrustServerCertificate=True";
 
                 var optionsBuilder = new DbContextOptionsBuilder<ElectronicJournalContext>();
                 optionsBuilder.UseSqlServer(

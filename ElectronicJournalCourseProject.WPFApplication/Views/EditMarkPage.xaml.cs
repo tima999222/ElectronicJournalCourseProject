@@ -28,6 +28,7 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
 
         private ComboBox studentComboBox;
         private TextBox markTextBox;
+        private int countOfChanges = 0;
 
         public EditMarkPage(string subjectName, string abbreviature)
         { 
@@ -41,6 +42,8 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
             _studentRepository = new StudentRepository();
             _markRepository = new MarkRepository();
 
+            studentComboBox = new ComboBox();
+
             InitializeComponent();
             DatesComboBox.ItemsSource = _lessonRepository.GetLessonsBySubjectName(_subjectName);   
         }
@@ -52,41 +55,47 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
 
         private void DatesComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            countOfChanges++;
             var lesson = DatesComboBox.SelectedItem as Lesson;
-
             if (lesson == null)
             {
-                MessageBox.Show("Не удалось дату занятия");
+                MessageBox.Show("Не удалось получить дату занятия");
                 return;
             }
 
             _lessonDate = lesson.LessonDate;
-
-            #region StackPanel editing
-
-            Label label1 = new Label()
-            {
-                FontSize = 14,
-                Content = "Выберите студента с оценкой на выбранную дату"
-            };
-
             var st = _studentRepository.HaveMarkOnThisLesson(_lessonDate, _abbreviature, TeacherSession.TeacherId);
-
-            studentComboBox = new ComboBox()
+            if (countOfChanges == 1)
             {
-                ItemsSource = st,
-                DisplayMemberPath = "StudentFullName"
-            };
+                
+                #region StackPanel editing
 
-            studentComboBox.SelectionChanged += StudentsComboBox_SelectionChanged;
+                Label label1 = new Label()
+                {
+                    FontSize = 14,
+                    Content = "Выберите студента с оценкой на выбранную дату"
+                };
 
-            Binding binding = new Binding("Student");
-            binding.Source = studentComboBox.SelectedItem;
 
-            stackPanel.Children.Add(label1);
-            stackPanel.Children.Add(studentComboBox);
 
-            #endregion
+                studentComboBox.ItemsSource = st;
+                studentComboBox.DisplayMemberPath = "StudentFullName";
+                    
+                studentComboBox.SelectionChanged += StudentsComboBox_SelectionChanged;
+
+                Binding binding = new Binding("Student");
+                binding.Source = studentComboBox.SelectedItem;
+
+                stackPanel.Children.Add(label1);
+                stackPanel.Children.Add(studentComboBox);
+
+                #endregion
+            }
+            else
+            {
+                studentComboBox.ItemsSource = st;
+            }
+
         }
 
         private void StudentsComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
