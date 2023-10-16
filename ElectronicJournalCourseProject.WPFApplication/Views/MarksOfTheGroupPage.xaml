@@ -16,6 +16,8 @@
         </Grid.RowDefinitions>
 
         <Button x:Name="GoBackButton" Grid.Row="0" Width="200" HorizontalAlignment="Left" Click="GoBackButton_Click">Назад</Button>
+        <Button x:Name="CreateReportButton" Grid.Row="0" Width="220" HorizontalAlignment="Right" Click="CreateReportButton_Click">Сгенерировать excel отчет</Button>
+        
         
         <DataGrid x:Name="dataGrid" Grid.Row="1" IsReadOnly="True" AutoGenerateColumns="False" CanUserSortColumns="False">
             

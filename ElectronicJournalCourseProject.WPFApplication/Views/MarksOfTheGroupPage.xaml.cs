@@ -1,13 +1,13 @@
-﻿using ElectronicJournalCourseProject.Data.Entities;
-using ElectronicJournalCourseProject.Data.Repositories;
+﻿using ElectronicJournalCourseProject.Data.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Windows;
+using Microsoft.WindowsAPICodePack.Dialogs;
 using System.Windows.Controls;
 using System.Windows.Data;
-using System.Windows.Media;
+using ElectronicJournalCourseProject.RepostExcelServise;
 
 namespace ElectronicJournalCourseProject.WPFApplication.Views
 {
@@ -109,6 +109,21 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
         private void EditButton_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new EditMarkPage(_subjectName, _abbreviature));
+        }
+
+        private void CreateReportButton_Click(object sender, RoutedEventArgs e)
+        {
+            var service = new ExcelReportService(_abbreviature, _subjectName);
+
+            var dialog = new CommonOpenFileDialog();
+            dialog.IsFolderPicker = true;
+
+            if (dialog.ShowDialog() == CommonFileDialogResult.Ok)
+            {
+                string pathToFolder = dialog.FileName;
+                service.ConvertDataTableToExcel(dataTable, pathToFolder);
+                MessageBox.Show("Отчет создан");
+            }
         }
     }
 }
