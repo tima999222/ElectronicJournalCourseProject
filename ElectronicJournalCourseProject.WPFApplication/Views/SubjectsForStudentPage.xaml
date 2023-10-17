@@ -13,11 +13,18 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="50"></RowDefinition>
             <RowDefinition></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
         </Grid.RowDefinitions>
 
         <Button x:Name="GoBackButton" Width="200" HorizontalAlignment="Left" Click="GoBackButton_Click">Назад</Button>
-        <Label x:Name="NameLabel" FontSize="14" Grid.Row="0" HorizontalAlignment="Right"></Label>
-        
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <Label FontSize="14" HorizontalAlignment="Right" VerticalAlignment="Center">Поиск по предмету</Label>
+            <TextBox x:Name="FindTextBox" BorderBrush="Black" Width="200" Height="30" TextChanged="FindTextBox_TextChanged"></TextBox>
+        </StackPanel>
+
+        <Label x:Name="NameLabel" FontSize="14" Grid.Row="2" HorizontalAlignment="Right"></Label>
+
         <DataGrid x:Name="DGridSubjects" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Предмет" FontSize="18" Binding="{Binding Teacher.TeacherFullName}" Width="*"></DataGridTextColumn>

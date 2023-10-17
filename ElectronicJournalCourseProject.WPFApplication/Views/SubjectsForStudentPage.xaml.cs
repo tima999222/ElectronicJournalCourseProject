@@ -1,6 +1,7 @@
 ﻿
 using ElectronicJournalCourseProject.Data.Entities;
 using ElectronicJournalCourseProject.Data.Repositories;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -17,9 +18,8 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
         {
             _loadListRepository = new LoadListRepository();
             InitializeComponent();
-            var list = _loadListRepository.GetSubjectsForStudent(StudentSession.StudentId);
             NameLabel.Content = StudentSession.StudentName;
-            DGridSubjects.ItemsSource = list;
+            UpdateGroups();
         }
 
         private void ShowMarksButton_Click(object sender, RoutedEventArgs e)
@@ -33,6 +33,19 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
             }
 
             NavigationService.Navigate(new MarksForTheLessonPage(subject.Plan.Subject.SubjectName, subject.Teacher.TeacherId));
+        }
+
+        private void UpdateGroups()
+        {
+            var subjects = _loadListRepository.GetSubjectsForStudent(StudentSession.StudentId);
+
+            subjects = subjects.Where(s => s.Plan.Subject.SubjectName.ToLower().Contains(FindTextBox.Text.ToLower())).ToList();
+            DGridSubjects.ItemsSource = subjects;
+        }
+
+        private void FindTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            UpdateGroups();
         }
 
         private void GoBackButton_Click(object sender, RoutedEventArgs e)
