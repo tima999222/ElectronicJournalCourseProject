@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.Linq;
+using System.Windows;
 using System.Windows.Controls;
 using ElectronicJournalCourseProject.Data.Entities;
 using ElectronicJournalCourseProject.Data.Repositories;
@@ -16,7 +17,7 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
         {
             InitializeComponent();
             _loadListRepository = new LoadListRepository();
-            DGridGroups.ItemsSource = _loadListRepository.GetGroupsAnsSubjectsForTeacher(TeacherSession.TeacherId);
+            UpdateGroups();
         }
 
         private void EditButton_Click(object sender, System.Windows.RoutedEventArgs e)
@@ -39,6 +40,19 @@ namespace ElectronicJournalCourseProject.WPFApplication.Views
         {
             TeacherSession.TeacherId = 0;
             NavigationService.GoBack();
+        }
+
+        private void UpdateGroups()
+        {
+            var groups = _loadListRepository.GetGroupsAnsSubjectsForTeacher(TeacherSession.TeacherId);
+
+            groups = groups.Where(g => g.Group.Abbreviature.ToLower().Contains(FindTextBox.Text.ToLower())).ToList();
+            DGridGroups.ItemsSource = groups;
+        }
+
+        private void FindTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            UpdateGroups();
         }
     }
 }

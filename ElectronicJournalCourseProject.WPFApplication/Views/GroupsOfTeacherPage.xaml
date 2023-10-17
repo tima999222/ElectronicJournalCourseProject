@@ -15,6 +15,11 @@
         </Grid.RowDefinitions>
 
         <Button x:Name="GoBackButton" Grid.Row="0" Width="200" HorizontalAlignment="Left" Click="GoBackButton_Click">Назад</Button>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <Label FontSize="14" HorizontalAlignment="Right" VerticalAlignment="Center">Поиск по группе</Label>
+            <TextBox x:Name="FindTextBox" BorderBrush="Black" Width="200" Height="30" TextChanged="FindTextBox_TextChanged"></TextBox>
+        </StackPanel>
+        
         
         <DataGrid x:Name="DGridGroups" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True">
             <DataGrid.Columns>
